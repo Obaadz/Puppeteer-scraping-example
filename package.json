@@ -1,16 +1,16 @@
 {
-  "name": "o6u-scraping-server",
+  "name": "puppeteer-scraping-example",
   "version": "1.0.0",
-  "description": "A backend server for web scraping the october 6 university site.",
+  "description": "An example of web scraping.",
   "main": "index.js",
-  "license": "Apache-2.0",
+  "license": "ISC",
   "scripts": {
     "start": "node index.js",
     "monitor": "nodemon index.js"
   },
   "dependencies": {
-    "cors": "^2.8.5",
     "express": "^4.18.2",
+    "cors": "^2.8.5",
     "puppeteer": "^18.1.0"
   },
   "devDependencies": {
