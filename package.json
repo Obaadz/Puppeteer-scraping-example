@@ -1,21 +1,14 @@
 {
-  "name": "test0",
+  "name": "o6u-scraping-server",
   "version": "1.0.0",
-  "description": "Renders webpages using headless Chrome for usage by bots",
+  "description": "A backend server for web scraping the october 6 university site.",
+  "main": "index.js",
   "license": "Apache-2.0",
-  "engines": {
-    "node": ">=7 <11"
-  },
-  "main": "build/rendertron.js",
-  "types": "build/rendertron.d.ts",
-  "bin": "bin/rendertron",
   "scripts": {
     "start": "node index.js",
     "monitor": "nodemon index.js"
   },
   "dependencies": {
-    "chrome-launcher": "^0.15.1",
-    "chrome-remote-interface": "^0.26.1",
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "puppeteer": "^1.7.0"
