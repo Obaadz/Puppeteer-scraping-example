@@ -1,6 +1,6 @@
-import express from "express";
-import puppeteer from "puppeteer";
-import cors from "cors";
+const express = require("express");
+const cors = require("cors");
+const puppeteer = require("puppeteer");
 
 const PORT = 5000;
 
@@ -25,4 +25,4 @@ app.listen(PORT, async () => {
   await browser.close();
 });
 
-export default app;
+module.exports = app;

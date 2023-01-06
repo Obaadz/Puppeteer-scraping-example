@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Renders webpages using headless Chrome for usage by bots",
   "license": "Apache-2.0",
-  "type": "module",
   "engines": {
     "node": ">=7 <11"
   },
