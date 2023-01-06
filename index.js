@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const puppeteer = require("puppeteer");
+const v1Routes = require("./routes/v1/index.js");
 
 const PORT = 5000;
 
@@ -14,15 +14,10 @@ app.use(bodyParser.urlencoded);
 app.use(bodyParser.json);
 app.use(cors());
 
-app.listen(PORT, async () => {
+app.use(v1Routes);
+
+app.listen(PORT, () => {
   console.log(`Listening on port: ${PORT}`);
-
-  const browser = await puppeteer.launch({ args: ["--no-sandbox"] });
-  const page = await browser.newPage();
-
-  await page.goto("https://o6u.edu.eg/default.aspx?id=70");
-  console.log(await page.content());
-  await browser.close();
 });
 
 module.exports = app;
